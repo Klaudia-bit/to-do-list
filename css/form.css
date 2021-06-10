@@ -1,0 +1,60 @@
+.container{
+    background-color: white;
+    margin-top: 10px;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 15px;
+    padding: 15px;
+}
+
+.form__newTask{
+    padding: 10px;
+    border: 1px #eee solid;
+}
+
+.button_newTask{
+    background-color: teal;
+    border: none;
+    color: white;
+    padding: 10px;    
+}
+
+.tasks{
+    padding: 15px;
+    margin: 0px;
+}
+
+.task{
+    list-style-type: none;
+    border-bottom: 1px #eee solid;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.task--done{
+    text-decoration: line-through;
+}
+
+.content{
+    padding: 1px 6px;
+    display: grid;
+    align-items: center;
+}
+
+.buttonDone{
+    background-color: green;
+    color: white;
+    height: 30px;
+    width: 30px;
+}
+
+.buttonRemove{
+    background-color: red;
+    color: white;
+    height: 30px;
+    width: 30px;
+}

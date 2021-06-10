@@ -1,4 +1,5 @@
 {
+    
     const tasks = [
         {
             content: "nagrać lekcję",
@@ -51,10 +52,9 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li class="task ${task.done ? "task--done" : ""}"
-            >
-            <button class="js-done buttonDone">&#10003</button>
-            <div class="content">
+            <li class="task">
+            <button class="js-done buttonUndone ${task.done ? "buttonDone" : ""}">&#10003</button>
+            <div class="task--noLine ${task.done ? "task--done" : ""} content">
                 ${task.content}
             </div>
             <button class="js-remove buttonRemove">&#x1F5D1</button>

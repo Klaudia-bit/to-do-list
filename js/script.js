@@ -1,14 +1,6 @@
 {
-    
+
     const tasks = [
-        {
-            content: "nagrać lekcję",
-            done: false,
-        },
-        {
-            content: "zjeść pierogi",
-            done: true,
-        },
     ];
 
     const addNewTask = (newTaskContent) => {
@@ -67,17 +59,26 @@
         bindEvents();
     };
 
+    const clearInput = (newTask) => {
+        newTask.value = '';
+        newTask.focus();
+    };
+
     const onFormSubmit = (event) => {
         event.preventDefault();
-
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const newTask = document.querySelector(".js-newTask");
+        const newTaskContent = newTask.value.trim();
         if (newTaskContent === "") {
+            clearInput(newTask);
             return;
         }
 
         addNewTask(newTaskContent);
+        clearInput(newTask);
 
     };
+
+
 
     const init = () => {
         render();

@@ -30,9 +30,10 @@
 .task{
     list-style-type: none;
     border-bottom: 1px #eee solid;
-    padding: 10px;
     display: grid;
     grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    padding: 10px;
 }
 
 .task--list{
@@ -44,7 +45,6 @@
 }
 
 .content{
-    padding: 1px 6px;
     display: grid;
     align-items: center;
 }
@@ -79,3 +79,23 @@
 .buttonRemove:active{
     border: black solid 2px;
 }
+
+@media (max-width: 767px) {
+    .form{
+        grid-template-columns: auto;
+    }
+    .button_newTask{
+        display: flex;
+        flex: 100%;
+        justify-content: center;
+    }
+    .content{
+        word-break: break-word;
+    }
+    .task{
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+    }
+}
+   

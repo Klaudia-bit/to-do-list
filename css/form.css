@@ -54,6 +54,11 @@
     color: green;
     height: 30px;
     width: 30px;
+    border: green;
+}
+
+.buttonUndone:active{
+    border: black solid 2px;
 }
 
 .buttonDone{
@@ -68,4 +73,9 @@
     color: white;
     height: 30px;
     width: 30px;
+    border: red;
+}
+
+.buttonRemove:active{
+    border: black solid 2px;
 }

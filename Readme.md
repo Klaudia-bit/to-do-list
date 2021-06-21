@@ -21,4 +21,4 @@ This is a simple list of tasks. This project was created to add new tasks. You c
 3. If you want to delete the task click red squred button
 4. If you want mark the task as done click green squared button
 
-![How to use it](https://github.com/Klaudia-bit/currency-calculator/blob/main/images/Animation.gif)
+![How to use it](https://github.com/Klaudia-bit/to-do-list/blob/main/images/task.gif)
